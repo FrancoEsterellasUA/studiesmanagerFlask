@@ -1,0 +1,11 @@
+body{
+    background-color: rgb(18, 18, 18);
+    color: lightyellow;
+    font-family: 'Roboto Flex';
+}
+
+#navbar-container{
+    height: 40px;
+    background-color: rgb(16, 16, 16);
+    color: lightyellow;
+}

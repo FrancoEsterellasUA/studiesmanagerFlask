@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landpage</title>
+    <link rel="stylesheet" href="static\style.css">
+    <!--Google Fonts LINKS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+    {% block head %}
+    {% endblock %}
+</head>
+<body>
+    <div id="navbar-container">
+        <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+        <h4 class="navbar-brand">
+            <img src="https://mailmeteor.com/logos/assets/PNG/Microsoft_Logo_512px.png" alt="Logo" width="30" height="24"  class="d-inline-block align-text-top" style="margin-right: 15px;">
+            Web-App
+        </h4>
+        </div>
+        </nav>
+    </div>
+    {% block body %}
+    {% endblock %}
+</body>
+</html>
