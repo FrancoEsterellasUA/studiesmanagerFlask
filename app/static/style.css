@@ -9,3 +9,30 @@ body{
     background-color: rgb(16, 16, 16);
     color: lightyellow;
 }
+table{
+    background-color: rgb(184, 179, 153);
+    /* color: black; */
+    width: 90%;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th,tr,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+#Table-container{
+    display:  flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#formulario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.data_task{
+    text-align: center;
+}
+.action-column{
+    max-width: 30px;
+}

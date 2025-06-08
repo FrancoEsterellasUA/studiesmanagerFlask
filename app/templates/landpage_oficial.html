@@ -8,4 +8,40 @@
 <h1>Welcome!</h1>
 <h3>This is my web-app, studies manager:</h3>
 
+<div id="Table-container">
+    <table>
+        <tr>
+        <th>Topic / Subject</th>
+        <th>Date Created</th>
+        <th>Information</th>
+        <th class="action-column">Actions</th>
+        </tr>
+        {% for s in studies%}
+        <tr>
+        <td class="data_task">{{s.Topic}}</td>
+        <td class="data_task">{{s.Date}}</td>
+        <td class="data_task">{{s.Information}}</td>
+        <td class="data_task action-column">
+            <form action="{{ url_for('delete', id=s.id) }}" method="get">
+            <button type="submit">Delete</button>
+            </form>
+        </td>
+        </tr>
+        {% else %}
+        <tr>
+        <td colspan="4" style="text-align: center;">No hay datos para mostrar.</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+
+<div id="formulario">
+    <form action="/new" method="POST">
+        <input name="Topic" placeholder="Topic Name"/>
+        <!-- <input name="Date" placeholder="Date"/> -->
+        <input name="Information" placeholder="Information"/>
+        <button>Send</button>
+    </form>
+</div>
+
 {% endblock %}
